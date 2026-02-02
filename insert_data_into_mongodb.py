@@ -1,7 +1,7 @@
 import pymongo
 import pandas as pd
 
-client = pymongo.MongoClient("mongodb://13.61.4.153:27017/")
+client = pymongo.MongoClient("mongodb://18.201.181.143:27017/")
 
 db = client["mission_db"]
 

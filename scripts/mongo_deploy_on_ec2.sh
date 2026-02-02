@@ -1,5 +1,8 @@
 #!/bin/bash
 
+# add if using with user data
+# sleep 15
+
 # Update the packages
 sudo apt-get update
 
@@ -34,3 +37,6 @@ sudo sed -i 's/bindIp: 127.0.0.1/bindIp: 0.0.0.0/g' $CONFIG_FILE
 
 # Start MongoDB
 sudo systemctl restart mongod
+
+# add enable to allow mongodb to start automatically when launching instance 
+sudo systemctl enable mongod
